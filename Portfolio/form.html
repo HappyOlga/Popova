@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заполнения</title>
+</head>
+<body>
+
+    <p>Этот сайт предназначен для сбора данных краткой информации про ваших детей</p>
+    <form action="">
+
+    <fieldset>
+        <legend>Форма для сбора персональных данных ребенка:</legend>
+            <label for="fname">Фамилия:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+
+            <label for="lname">Имя:</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" min="0" max="18">
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Форма для сбора данных о интересах ребенка:</legend>
+            <label for="drink">Любимый напиток:</label>
+            <select name="drink" id="drink">
+                <option value="choose_drink">Выберите напиток</option>
+                <option value="water">Вода</option>
+                <option value="juice">Сок</option>
+                <option value="tea">Чай</option>
+                <option value="fruit_water">Компот</option>
+            </select>
+            <br><br> 
+
+            <label for="sweets">Любимые сладости:</label>
+            <input list="sweets">
+                <datalist id="sweets">
+                    <option value="Шоколад"></option>
+                    <option value="Торт"></option>
+                    <option value="Леденец"></option>
+                    <option value="Пирожное"></option>
+                    <option value="Печенье"></option>
+                </datalist>
+                <br><br>
+
+            <label for="toy">Любимая игрушка:</label>
+            <input type="radio" id="toy1" name="toy" value="rad1"> Мишка
+            <input type="radio" id="toy2" name="toy" value="rad2">Лего
+            <input type="radio" id="toy3" name="toy" value="rad3">Кукла
+            <input type="radio" id="toy4" name="toy" value="rad4">Видеоигры
+            <input type="radio" id="toy5" name="toy" value="rad4">Поняшки
+    </fieldset>
+
+    <label for="message">Введите основные увлечения ребенка:</label>
+    <textarea name="message" style="width:300px; height:100px;"></textarea>
+    <br>
+
+    <button>Отправить информацию</button>  
+
+</form>
+</body>
+</html>

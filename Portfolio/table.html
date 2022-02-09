@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица с данными</title>
+</head>
+<body>
+    <table>
+        <style>
+            table {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td,th {
+                border: 1px solid #dddddd;
+                text-align:center;
+                padding: 8px;
+            }
+        </style>
+        
+        <thead>
+            <tr><th colspan="8">Данные о детях</th></tr>
+            <tr>
+                <th></th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Возраст</th>
+                <th>Любимый напиток</th>
+                <th>Любимые сладости</th>
+                <th>Любимая игрушка</th>
+                <th>Комментарии</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr><th colspan="8">Итого 6 человек</th></tr>
+        </tfoot>
+
+        <tbody>
+            <tr><td rowspan="4">Мальчики</td></tr>
+        <tr>
+          <td>Иванов</td>
+          <td>Иван</td>
+          <td>6</td>
+          <td>Чай</td>
+          <td>Торт</td>
+          <td>Лего</td>
+          <td>Любит много есть</td>
+        </tr>
+        
+        <tr>
+            <td>Петров</td>
+            <td>Николай</td>
+            <td>10</td>
+            <td>Сок</td>
+            <td>Леденец</td>
+            <td>Мишка</td>
+            <td>Много читает</td>
+        </tr>
+
+        <tr>
+            <td>Васильев</td>
+            <td>Михаил</td>
+            <td>15</td>
+            <td>Вода</td>
+            <td>Шоколад</td>
+            <td>Видеоигры</td>
+            <td>Любит много спать</td>
+        </tr>
+
+        <tr><td rowspan="4">Девочки</td></tr>
+        <tr>
+            <td>Михайлова</td>
+            <td>Галина</td>
+            <td>7</td>
+            <td>Компот</td>
+            <td>Печенье</td>
+            <td>Кукла</td>
+            <td>Много поет</td>
+          </tr>
+          
+          <tr>
+              <td>Пупкина</td>
+              <td>Анастасия</td>
+              <td>11</td>
+              <td>Сок</td>
+              <td>Пирожное</td>
+              <td>Поняшки</td>
+              <td>Играет на фортепиано</td>
+          </tr>
+  
+          <tr>
+              <td>Рыжикова</td>
+              <td>Дарина</td>
+              <td>3</td>
+              <td>Вода</td>
+              <td>Шоколад</td>
+              <td>Кукла</td>
+              <td>Любит рисовать красками</td>
+          </tr>  
+    </tbody>
+
+    </table>     
+</body>
+</html>
